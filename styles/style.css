@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+/* common styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none;
+  background-color: #dcdcdc;
+  padding-left: 10px;
+  width: 230px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* main-contents styles */
+.main-contents {
+  background-color: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+}
+
+main img {
+  min-height: 550px;
+}
+
+/* hiding errors initially */
+#salary-income-input-error,
+#food-cost-input-error,
+#rent-cost-input-error,
+#clothes-cost-input-error,
+#saving-percentage-taker-error,
+#salary-income-input-error-negative,
+#food-cost-input-error-negative,
+#rent-cost-input-error-negative,
+#clothes-cost-input-error-negative,
+#saving-percentage-taker-error-negative,
+#negative-balance-handle {
+  color: red;
+  display: none;
+}
+
+/* savings styles */
+.savings p {
+  margin-bottom: 0;
+}
+.savings input {
+  width: 55px;
+  height: 35px;
+  text-align: center;
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 692px) {
+  input {
+    width: 180px;
+  }
+
+  main img {
+    min-height: 300px;
+    max-width: 100%;
+  }
+}
